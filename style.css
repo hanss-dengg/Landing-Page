@@ -1,9 +1,10 @@
 body {
-    height: 100vh;
+
     margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    overflow: auto;
 }
 
 button {
@@ -11,16 +12,16 @@ button {
     background-color: #3882f6; 
     color: white; 
     border-radius: 8px;
+    margin-top: 20px;
 }
 
 .header {
     background-color: #1f2937;
     color: white;
-    font: roboto;
     display: flex;
     margin: 0px;
-    padding: 20px;
-    justify-content: space-around;
+    padding: 20px 100px;
+    justify-content: space-between;
 }
 
 ul {
@@ -41,18 +42,24 @@ li{
     color: white;
     padding: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex: 1;
-    max-height: 300px;
-    
+    gap: 100px;
+    flex: 1;    
+}
+
+.image-border {
+    border-radius: 9px;
+    border-style: solid;
+    border-color: #3882f6;
 }
 
 .content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    gap: 150px;
+    padding-bottom: 80px;
 }
 
 .card {
@@ -64,16 +71,24 @@ li{
 }
 
 .quote {
-    padding: 30px 20px;
+    padding: 50px 100px;
     background-color: #E5E7EB;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+
+}
+
+.author {
+    font-size: 24px; 
+    font-weight: 900; 
+    margin-top: 25px;
 }
 
 .call-to-action {
     height: 200px;
-    margin: 50px;
+    margin: 50px 100px;
     border-radius: 8px;
     background-color: #3882f6;
     display: flex;
@@ -85,9 +100,9 @@ li{
     background-color: #1f2937;
     color: white;
     display: flex;
-    margin-top: auto;
     padding: 20px;
     justify-content: center;
     align-items: center;
+ 
 }
 
